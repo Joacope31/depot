@@ -1,0 +1,328 @@
+/* Pagina principal */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navBarNav {
+    padding: 0;
+    margin-right: 10px;
+}
+
+#contGral {
+    background-color: white;
+    height: 2000px;
+}
+
+#imglogo {
+    align-content: center;
+}
+
+#ContNav {
+    height: 75px;
+}
+
+#ContNavgral {
+    height: 80px;
+}
+
+#imgSlide {
+    height: 650px;
+    background-image: url(/img/slide-img.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.subTextoimg {
+    color: #929292;
+}
+
+#ContNavFull {
+    display: none;
+}
+
+#navbarfull {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.imgwh {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+.overlay div {
+    display: none;
+}
+
+.overlay:hover {
+    background-color: #0000009c;
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+.overlay:hover div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.imgwh:hover .img-scale {
+    transform: scale(1.07);
+    transition: transform 800ms;
+}
+
+.imgwh:hover {
+    overflow: hidden;
+}
+
+.arrowUp {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid #080808;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+}
+
+.arrow {
+    color: #fff;
+    background-color: #080808;
+}
+
+#containerSuscribe {
+    text-align: center;
+}
+
+.buttonSuscribe {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: none;
+    letter-spacing: .15em;
+    padding: 13px 46px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #080808;
+    font-weight: 700;
+}
+
+.emailAddress {
+    width: 84%;
+    margin: 2px 0 15px;
+    padding: 20px 18px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: inherit;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    border-radius: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    height: 59px;
+}
+
+#subtituloSuscribir {
+    color: #929292;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 13px;
+    color: gray;
+}
+
+.footerText p {
+    margin-bottom: 1rem !important;
+}
+
+.card-body a {
+    text-decoration: none;
+}
+
+.img-text {
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+}
+
+.loginBG {
+    display: flex;
+    background-image: url(/img/backgroundLogin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.handPointer:hover {
+    cursor: pointer;
+}
+
+
+/* @ media */
+
+@media (min-width: 767.98px) {
+    #ContNavMobile {
+        display: none;
+    }
+    #ContNavFull {
+        display: block;
+    }
+    #ourservice__body__desc1_mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #imgqsv1 {
+        display: none;
+    }
+    #dec2mobile {
+        display: none;
+    }
+    #arrowUp {
+        display: none;
+    }
+    #login {
+        display: none;
+    }
+    #ourservice__body__desc1_mobile {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #ourservice__body__desc1_fullscreen {
+        display: none !important;
+    }
+}
+
+
+/* Our services */
+
+#imgdesign {
+    background-image: url(/img/design1.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone {
+    right: 0;
+    top: 1;
+}
+
+#contGral {
+    height: 100%;
+}
+
+
+/* pagina login */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+    height: auto;
+    padding: 10px;
+}
+
+
+/* Our products */
+
+#route {
+    color: gray;
+}
+
+@media (max-width: 767.98px) {
+    #prodImg {
+        flex-direction: row !important;
+    }
+    #descprod {
+        display: none;
+    }
+}
+
+.textogris {
+    color: gray;
+}
+
+hr {
+    margin-top: 50px;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/* not found */
+
+.cardError {
+    border: none;
+}
+
+.textError {
+    font-size: 16px;
+}
+
+.navBarLogo {
+    padding-bottom: 0;
+}
